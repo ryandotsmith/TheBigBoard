@@ -29,8 +29,8 @@ post '/goals' do
 end
 
 put '/goal/:goal_id' do
-  goal = Goal.by_name.select { |g| g.id == params[:goal_id] }
-  goal.first.update_attributes( params[:goal] )
+  goal = Goal.find params[:goal_id] 
+  goal.update_attributes( params[:goal] )
 end
 
 delete '/goal/:goal_id' do 

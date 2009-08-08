@@ -35,9 +35,11 @@ describe "Loading Goals on The Big Board" do
   end
   
   specify "updating a goal" do
-    goal = Goal.new valid_attr
-    goal.save
+    Goal.new( valid_attr ).save
+    goal = mock( Goal )
     updated_attr = { 'goal' => { 'name' => "updatedness" } }
+    Goal.should_receive( :find ).and_return( goal )
+    goal.should_receive( :id ).and_return( Goal.all.first.id )
     goal.should_receive( :update_attributes ).with( updated_attr['goal'] )
     put "/goal/#{ goal.id }", updated_attr 
   end
