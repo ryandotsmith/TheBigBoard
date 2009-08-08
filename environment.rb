@@ -2,6 +2,7 @@ require 'rubygems'
 require 'couchrest'
 require 'haml'
 require 'ostruct'
+require 'gchart'
 
 require 'sinatra' unless defined?(Sinatra)
 

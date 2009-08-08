@@ -1,0 +1,18 @@
+%form{ :action => '/goals', :method => 'post', :name  => 'new_goal' }
+  %p
+    %label{ :for => 'goal_name' }
+      Name of Goal
+    %input{ :id  => 'goal_name', :type  => 'text', :name  => 'goal[name]' }
+
+  %p
+    %label{ :for => 'goal_exectation' }
+      Expectation  
+    %input{ :id  => 'goal_expectation', :type  => 'text', :name  => 'goal[expectation]' }
+
+  %p
+    %label{ :for => 'goal_actual' }
+      Actual 
+    %input{ :id  => 'goal_acutal', :type  => 'text', :name  => 'goal[actual]' }
+
+  %p
+    %input{ :id  => 'goal_submit', :type => 'submit', :value  => "add goal" }

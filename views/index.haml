@@ -1,2 +1,14 @@
 #content
-  This is the index
+  - if @flash
+    %p= @flash
+  %a{ :href => '/goals/new' } new goal 
+  %table
+    - @goals.each do |goal|
+      %tr
+        %td
+          %img{ :src  => goal.chart }
+        %td
+          %form{ :action => "/goal/#{ goal.id }", :method => 'post' }
+            %input{ :type => 'hidden',:name => '_method', :value => 'delete' }
+            %button{ :type => 'submit'}
+              Delete

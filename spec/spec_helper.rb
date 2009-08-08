@@ -26,4 +26,3 @@ Spec::Runner.configure do |config|
     end
   end
 end
-
