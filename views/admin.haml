@@ -1,0 +1,32 @@
+#content
+  - @goals.each do |goal|
+    #div.chart
+      #chart_view
+        %h1= goal.name    
+        %img{ :src => goal.chart }
+      #chart_control
+        %form{ :action => "/goal/#{ goal.id }", :method => 'post' }
+          %input{ :type => 'hidden',:name => '_method', :value => 'put' }
+          %p
+            %label{ :for => 'goal_name' }
+              Name of Goal
+            %input{ :id  => 'goal_name', :type  => 'text', :name  => 'goal[name]', :value => goal.name }
+
+          %p
+            %label{ :for => 'goal_exectation' }
+              Expectation  
+            %input{ :id  => 'goal_expectation', :type  => 'text', :name  => 'goal[expectation]',:value => goal.expectation }
+
+          %p
+            %label{ :for => 'goal_actual' }
+              Actual 
+            %input{ :id  => 'goal_acutal', :type  => 'text', :name  => 'goal[actual]', :value => goal.actual }
+
+          %p
+            %input{ :id  => 'goal_submit', :type => 'submit', :value  => "update goal" }
+        %form{ :action => "/goal/#{ goal.id }", :method => 'post' }
+          %input{ :type => 'hidden',:name => '_method', :value => 'delete' }
+          %button{ :type => 'submit'}
+            Delete
+  #goal_pannel
+    %a{ :href => '/goals/new' } new goal 

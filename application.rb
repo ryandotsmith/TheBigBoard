@@ -14,7 +14,7 @@ end
 get '/goals' do
   @goals = Goal.all
   @admin = true
-  haml :index
+  haml :admin
 end
 
 get '/goals/new' do
@@ -24,20 +24,19 @@ end
 post '/goals' do
   goal = Goal.new( params[:goal] )
   goal.save
-  @goals = Goal.all
-  haml :index
+  redirect '/goals'
 end
 
 put '/goal/:goal_id' do
   goal = Goal.find params[:goal_id] 
   goal.update_attributes( params[:goal] )
+  redirect '/goals'
 end
 
 delete '/goal/:goal_id' do 
   goal = Goal.by_name.select { |g| g.id == params[:goal_id] }
   goal.first.destroy
-  @goals = Goal.all
-  haml :index
+  redirect '/goals'
 end
 
 
