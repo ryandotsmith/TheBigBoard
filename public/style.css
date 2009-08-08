@@ -1,28 +1,67 @@
-
 body {
+  background-color:#E8E8E8;
+  font-family:arial;
 }
 h1 {
+}
+h2 {
+  font-size:15;
+}
+a {
+  color:#292929;
+}
+.center fieldset {
+  border:none;
+  text-align:center;
+}
+.center input {
+  margin:10px 0 10px 0;
+}
+.center input[type=text] {
+  font-size:18px;
+}
+label {
+  display:block;
+  color:#A2A2A2;
+  font-size:14px;
 }
 #container {
 }
 #content {
+  width:900px;
+  margin:100px auto;
 }
 #top {
   width:800px;
-  height:600px;
+  height:450px;
 }
 #bottom {
+  color:#CCCCCC;
+  background-color:#333333;
+  height:100px;
+  width:100%;
   clear:both;
-  margin: 30px 0 0 0;
+  padding:10px;
+}
+#bottom a {
+  color:#CCCCCC;
 }
 .chart {
-  width:200px;
+  width:160px;
   float:left;
-  margin:0 0 0 30px;
+  margin:0 0 0 50px;
+}
+.center {
+  width:600px;
+  margin:0 auto;
+}
+.center .chart {
+  width:100px;
 }
 #chart_view {
 }
 #chart_control {
+  margin:20px 0 0 0;
 }
 #goal_panel {
 }

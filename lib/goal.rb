@@ -16,8 +16,12 @@ class Goal < CouchRest::ExtendedDocument
 
   def chart() 
     Gchart.bar :data  => [ [self.actual.to_i],[self.expectation.to_i] ],
-               :bar_colors => ['FF0000', '00FF00'],
-               :bar_width_and_spacing => {:width => 40}
+               :bar_colors => ['3399CC', '333333'],
+               :chart_background => 'E8E8E8',
+               :background => 'E8E8E8',
+               :bar_width_and_spacing => {:width => 40},
+               :axis_with_labels => 'y'
+
   end
 
 end

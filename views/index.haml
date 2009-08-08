@@ -1,8 +1,7 @@
 #content
-  - if @flash
-    %p= @flash
-  %table
+  .center
     - @goals.each do |goal|
-      %tr
-        %td
-          %img{ :src  => goal.chart }
+      .chart
+        %img{ :src  => goal.chart }
+        %h2{ :style => 'text-align:center;' }
+          = goal.name

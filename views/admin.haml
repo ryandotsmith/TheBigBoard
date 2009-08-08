@@ -3,7 +3,6 @@
     - @goals.each do |goal|
       #div.chart
         #chart_view
-          %h1= goal.name    
           %img{ :src => goal.chart }
         #chart_control
           %form{ :action => "/goal/#{ goal.id }", :method => 'post' }
@@ -21,11 +20,15 @@
               Actual 
             %input{ :id  => 'goal_acutal', :type  => 'text', :name  => 'goal[actual]', :value => goal.actual }
 
-            %input{ :id  => 'goal_submit', :type => 'submit', :value  => "Update" }
+            %button{ :id  => 'goal_submit', :type => 'submit', :style => 'float:left;' }
+              Update
+
           %form{ :action => "/goal/#{ goal.id }", :method => 'post' }
             %input{ :type => 'hidden',:name => '_method', :value => 'delete' }
-            %button{ :type => 'submit'}
+            %button{ :type => 'submit', :style => 'float:right;'}
               Delete
   #bottom
     #goal_panel
       %a{ :href => '/goals/new' } new goal 
+      %a{ :href => '/' } index
+
