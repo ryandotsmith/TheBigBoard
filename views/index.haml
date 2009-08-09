@@ -3,5 +3,7 @@
     - @goals.each do |goal|
       .chart
         %img{ :src  => goal.chart }
-        %h2{ :style => 'text-align:center;' }
-          = goal.name
+        %h2
+          - goal.name.split.each do |word|
+            = word
+            %br
