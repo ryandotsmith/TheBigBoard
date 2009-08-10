@@ -32,7 +32,7 @@ label {
 }
 #navigation {
   height:50px;
-  background-color:#333333;
+  background-color:#666666;
   color:#CCCCCC;
 }
 #navigation a {
@@ -43,9 +43,7 @@ label {
   width:100px;
   height:38px;
   background-color:#666666;
-  border-top:1px solid #333333;
   border-right:1px solid #333333;
-  border-bottom:1px solid #333333;
 }
 #navigation a:hover {
   color:#cccccc;
@@ -54,16 +52,26 @@ label {
   text-align:center;
   background-color:#333333;
   height:130px;
-  border-top: 5px solid #666666;
 }
 #dock {
   width:500px;
-  margin:20px auto;
+  background-color:#CCCCCC;
+  margin:0 auto;
 }
 .dock_item {
   color:#666666;
-  margin:0 20px 0 20px;
+  margin:10px 20px 0 20px;
   float:left;
+}
+.dock_item a {
+  color:#666666;
+  text-decoration:none;
+}
+.dock_item a:hover {
+  color:white;
+}
+.dock_item img {
+  border:none;
 }
 #container {
 }

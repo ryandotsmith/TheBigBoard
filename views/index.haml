@@ -5,21 +5,25 @@
   #menu{ :style => 'display:none;' }
     #dock
       .dock_item 
-        %img{ :src => '/images/bidstore.png' }
-        %br
-        Bid Store
+        %a{ :href => 'http://bidstore.gs-enterprises.local' }
+          %img{ :src => '/images/bidstore.png' }
+          %br
+          Bid Store
       .dock_item  
-        %img{ :src => '/images/onholiday.png' }
-        %br
-        OnHoliday
+        %a{ :href => 'http://onholiday.gs-enterprises.local' }
+          %img{ :src => '/images/onholiday.png' }
+          %br
+          OnHoliday
       .dock_item 
-        %img{ :src => '/images/presently.png' }
-        %br
-        presently
+        %a{ :href => 'http://gsenterprises.presentlyapp.com' }
+          %img{ :src => '/images/presently.png' }
+          %br
+          presently
       .dock_item
-        %img{ :src => '/images/mail.png' }
-        %br
-        email
+        %a{ :href => 'http://mail.gsenterprises.com' }
+          %img{ :src => '/images/mail.png' }
+          %br
+          email
 #content
   .center
     - @goals.each do |goal|
