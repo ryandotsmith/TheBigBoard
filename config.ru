@@ -3,6 +3,7 @@ require 'sinatra'
 require 'application'
 
 #set :run, false
+root_dir = File.dirname(__FILE__)
 set :app_file,    File.join(root_dir, 'application.rb')
 set :environment, :production
 disable :run
