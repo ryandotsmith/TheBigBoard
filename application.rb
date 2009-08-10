@@ -15,7 +15,7 @@ get '/goals' do
   @goals = Goal.all
   @admin = true
   haml :admin
-end
+end:0
 
 get '/goals/new' do
   haml :new
