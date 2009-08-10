@@ -3,6 +3,7 @@
   %h1 true
 - else
   %h1 no gchart
+  = `ruby -v`
 #content
   .center
     %form{ :action => '/goals', :method => 'post', :name  => 'new_goal' }
