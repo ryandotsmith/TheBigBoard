@@ -1,12 +1,7 @@
-require 'rubygems'
-require 'sinatra'
 require 'application'
 
-#set :run, false
-root_dir = File.dirname(__FILE__)
-set :app_file,    File.join(root_dir, 'application.rb')
+set :run, false
 set :environment, :production
-disable :run
 
 FileUtils.mkdir_p 'log' unless File.exists?('log')
 log = File.new("log/sinatra.log", "a")

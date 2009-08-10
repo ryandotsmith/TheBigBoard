@@ -1,5 +1,4 @@
 require 'rubygems'
-# github's jchris-couchrest
 require 'couchrest'
 require 'haml'
 require 'gchart'
