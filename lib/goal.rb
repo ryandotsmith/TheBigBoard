@@ -15,7 +15,7 @@ class Goal < CouchRest::ExtendedDocument
   end
 
   def chart() 
-    GChart.bar :data  => [ [self.actual.to_i],[self.expectation.to_i] ],
+    Gchart.bar :data  => [ [self.actual.to_i],[self.expectation.to_i] ],
                :bar_colors => ['3399CC', '333333'],
                :chart_background => 'E8E8E8',
                :background => 'E8E8E8',
