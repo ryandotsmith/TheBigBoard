@@ -1,3 +1,25 @@
+#header
+  #navigation
+    %a{ :id => 'web_apps'} web apps
+    %a calendar
+  #menu{ :style => 'display:none;' }
+    #dock
+      .dock_item 
+        %img{ :src => '/images/bidstore.png' }
+        %br
+        Bid Store
+      .dock_item  
+        %img{ :src => '/images/onholiday.png' }
+        %br
+        OnHoliday
+      .dock_item 
+        %img{ :src => '/images/presently.png' }
+        %br
+        presently
+      .dock_item
+        %img{ :src => '/images/mail.png' }
+        %br
+        email
 #content
   .center
     - @goals.each do |goal|

@@ -1,4 +1,6 @@
 body {
+  margin:0;
+  padding:0;
   background-color:#E8E8E8;
   font-family:arial;
 }
@@ -28,11 +30,46 @@ label {
   color:#A2A2A2;
   font-size:14px;
 }
+#navigation {
+  height:50px;
+  background-color:#333333;
+  color:#CCCCCC;
+}
+#navigation a {
+  color:#333366;
+  float:left;
+  padding:10px 0 0 0;
+  text-align:center;
+  width:100px;
+  height:38px;
+  background-color:#666666;
+  border-top:1px solid #333333;
+  border-right:1px solid #333333;
+  border-bottom:1px solid #333333;
+}
+#navigation a:hover {
+  color:#cccccc;
+}
+#menu {
+  text-align:center;
+  background-color:#333333;
+  height:130px;
+  border-top: 5px solid #666666;
+}
+#dock {
+  width:500px;
+  margin:20px auto;
+}
+.dock_item {
+  color:#666666;
+  margin:0 20px 0 20px;
+  float:left;
+}
 #container {
 }
 #content {
   width:900px;
-  margin:100px auto;
+  margin:0 auto;
 }
 #top {
   height:400px;
