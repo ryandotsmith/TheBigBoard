@@ -1,15 +1,11 @@
-- require 'rubygems'; 
-- if require 'gchart'
-  %h1 true
-- else
-  %h1 no gchart
-  = `ruby -v`
-  %br
-  = require 'rubygems'
-  %br
-  = require 'gchart'
-  %br
-  = require 'haml'
+%h1 no gchart
+= `ruby -v`
+%br
+= require 'rubygems'
+%br
+= require 'gchart'
+%br
+= require 'haml'
 #content
   .center
     %form{ :action => '/goals', :method => 'post', :name  => 'new_goal' }
