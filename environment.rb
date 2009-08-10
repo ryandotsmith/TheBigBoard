@@ -2,8 +2,8 @@ require 'rubygems'
 # github's jchris-couchrest
 require 'couchrest'
 require 'haml'
-require 'ostruct'
 require 'gchart'
+require 'ostruct'
 
 require 'sinatra' unless defined?(Sinatra)
 

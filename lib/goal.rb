@@ -1,4 +1,3 @@
-require 'gchart'
 class Goal < CouchRest::ExtendedDocument
   include CouchRest::Validation
   use_database CouchRest.database!((SiteConfig.url_base_db || '') + SiteConfig.db_name)
