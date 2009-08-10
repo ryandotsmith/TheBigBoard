@@ -1,4 +1,3 @@
-require 'gchart'
 require 'application'
 
 set :run, false
