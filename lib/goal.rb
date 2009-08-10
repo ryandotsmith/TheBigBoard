@@ -21,7 +21,6 @@ class Goal < CouchRest::ExtendedDocument
                :background => 'E8E8E8',
                :bar_width_and_spacing => {:width => 40},
                :axis_with_labels => 'y'
-
   end
 
 end
