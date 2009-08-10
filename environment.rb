@@ -1,4 +1,5 @@
 require 'rubygems'
+# github's jchris-couchrest
 require 'couchrest'
 require 'haml'
 require 'ostruct'
@@ -10,8 +11,8 @@ configure do
   SiteConfig = OpenStruct.new(
                  :title           => 'The Big Board',                    
                  :author          => 'ryandotsmith',
-                 :url_base        => 'http://localhost:4567/',
-                 :url_base_db     => 'http://localhost:5984/',
+                 :url_base        => 'http://10.0.1.20:4567/',
+                 :url_base_db     => 'http://10.0.1.20:5984/',
                  :db_name         => "the_big_board-#{Sinatra::Base.environment}" 
                )
 

@@ -4,12 +4,12 @@ default_run_options[:pty] = true
 
 # be sure to change these
 set :user, 'rsmith'
-#set :domain, 'yourdomain.com'
+set :domain, "10.0.1.20"
 set :application, 'TheBigBoard'
 
 # the rest should be good
-set :repository,  "#{user}@#{domain}:git/#{application}.git" 
-set :deploy_to, "/home/#{user}/#{domain}" 
+set :repository,  "git@github.com:ryandotsmith/TheBigBoard.git" 
+set :deploy_to, "/var/app/#{ application }" 
 set :deploy_via, :remote_cache
 set :scm, 'git'
 set :branch, 'master'
