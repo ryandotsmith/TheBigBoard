@@ -1,28 +1,3 @@
-#header
-  #navigation
-    %a{ :id => 'web_apps'} web apps
-  #menu{ :style => 'display:none;' }
-    #dock
-      .dock_item 
-        %a{ :href => 'http://bidstore.gs-enterprises.local' }
-          %img{ :src => '/images/bidstore.png' }
-          %br
-          Bid Store
-      .dock_item  
-        %a{ :href => 'http://onholiday.gs-enterprises.local' }
-          %img{ :src => '/images/onholiday.png' }
-          %br
-          OnHoliday
-      .dock_item 
-        %a{ :href => 'http://gsenterprises.presentlyapp.com' }
-          %img{ :src => '/images/presently.png' }
-          %br
-          presently
-      .dock_item
-        %a{ :href => 'http://mail.gsenterprises.com' }
-          %img{ :src => '/images/mail.png' }
-          %br
-          email
 #content
   .center
     - @goals.each do |goal|

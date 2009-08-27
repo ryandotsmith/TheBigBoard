@@ -39,4 +39,6 @@ delete '/goal/:goal_id' do
   redirect '/goals'
 end
 
-
+get '/calendar' do
+  haml :calendar
+end
