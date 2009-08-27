@@ -85,6 +85,7 @@ label {
 }
 #top {
   height:400px;
+  margin:0 0 30px 0;
 }
 #bottom {
   color:#CCCCCC;
@@ -112,7 +113,7 @@ label {
   margin:0 auto;
 }
 .center .chart {
-  width:100px;
+  width:150px;
 }
 #chart_view {
 }
