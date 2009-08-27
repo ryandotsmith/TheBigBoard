@@ -7,3 +7,8 @@
           - goal.name.split.each do |word|
             = word
             %br
+        %p
+          = "actual: " + goal.actual
+          %br
+          = "as of: "  + goal.as_of if goal.as_of 
+          %br

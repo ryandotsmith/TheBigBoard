@@ -104,6 +104,9 @@ label {
 .chart h2 {
   margin:0 0 0 30px;
 }
+.chart p {
+  font-size:12px;
+}
 .center {
   width:600px;
   margin:0 auto;

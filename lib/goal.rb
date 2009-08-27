@@ -5,6 +5,7 @@ class Goal < CouchRest::ExtendedDocument
   property :name
   property :expectation
   property :actual
+  property :as_of
 
   validates_present  :name, :expectation, :actual
 

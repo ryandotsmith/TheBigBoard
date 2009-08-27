@@ -20,6 +20,10 @@
               Actual 
             %input{ :id  => 'goal_acutal', :type  => 'text', :name  => 'goal[actual]', :value => goal.actual }
 
+            %label{ :for => 'goal_as_of' }
+              As Of 
+            %input{ :id  => 'goal_as_of', :type  => 'text', :name  => 'goal[as_of]',:value => goal.as_of}
+
             %button{ :id  => 'goal_submit', :type => 'submit', :style => 'float:left;' }
               Update
 
