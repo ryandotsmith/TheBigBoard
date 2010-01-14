@@ -1,7 +1,7 @@
 require 'rubygems'
-require 'couchrest'
+#require 'couchrest'
 require 'haml'
-require 'gchart'
+#require 'gchart'
 require 'ostruct'
 
 require 'sinatra' unless defined?(Sinatra)
@@ -11,7 +11,7 @@ configure do
                  :title           => 'The Big Board',                    
                  :author          => 'ryandotsmith',
                  :url_base        => 'http://10.0.1.20:4567/',
-                 :url_base_db     => 'http://10.0.1.20:5984/',
+                 #:url_base_db     => 'http://10.0.1.20:5984/',
                  :db_name         => "the_big_board-#{Sinatra::Base.environment}" 
                )
 

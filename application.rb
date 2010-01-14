@@ -7,7 +7,7 @@ configure do
 end
 
 get '/' do
-  @goals = Goal.all
+  #@goals = Goal.all
   haml :index
 end
 
